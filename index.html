@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Physik Quiz 2 – Licht und Atome (mit Links)</title>
+  <title>Physik Quiz 2 – Licht und Atome (LehrerSchmidt-Links)</title>
   <style>
     body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 20px; }
     .container { background: white; max-width: 800px; margin: auto; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
@@ -18,9 +18,9 @@
       solution.textContent = "Richtige Antwort: " + text;
       solution.style.display = "block";
     }
-    function showLink(id, url) {
+    function showLink(id, text, url) {
       const link = document.getElementById("link_" + id);
-      link.innerHTML = '<a href="' + url + '" target="_blank">Erklärvideo bei Lehrer Schmidt ansehen</a>';
+      link.innerHTML = 'Benutze den Link zur LehrerSchmidt-Seite und schau dieses Video an: <strong>' + text + '</strong><br><a href="' + url + '" target="_blank">' + url + '</a>';
       link.style.display = "block";
     }
   </script>
@@ -34,7 +34,7 @@
       <p>Was passiert bei Absorption von Licht in einem Atom?</p>
       <textarea placeholder="Antwort eingeben..."></textarea><br/>
       <button onclick="showSolution(1, 'Ein Elektron springt auf ein höheres Energieniveau')">Lösung anzeigen</button>
-      <button onclick="showLink(1, 'https://www.youtube.com/watch?v=FdwbL2WEoFA')">Erklärvideo anzeigen</button>
+      <button onclick="showLink(1, 'Absorption und Emission', 'https://lehrerschmidt.de/physik/absorption-und-emission/')">Erklärvideo anzeigen</button>
       <div class="feedback" id="solution_1"></div>
       <div class="link-container" id="link_1"></div>
     </div>
@@ -44,7 +44,7 @@
       <p>Was geschieht bei Emission?</p>
       <textarea placeholder="Antwort eingeben..."></textarea><br/>
       <button onclick="showSolution(2, 'Ein Elektron fällt auf ein niedrigeres Energieniveau und sendet ein Photon aus')">Lösung anzeigen</button>
-      <button onclick="showLink(2, 'https://www.youtube.com/watch?v=FdwbL2WEoFA')">Erklärvideo anzeigen</button>
+      <button onclick="showLink(2, 'Absorption und Emission', 'https://lehrerschmidt.de/physik/absorption-und-emission/')">Erklärvideo anzeigen</button>
       <div class="feedback" id="solution_2"></div>
       <div class="link-container" id="link_2"></div>
     </div>
@@ -54,7 +54,7 @@
       <p>Was zeigt ein Emissionsspektrum?</p>
       <textarea placeholder="Antwort eingeben..."></textarea><br/>
       <button onclick="showSolution(3, 'Lichtlinien, die von einem angeregten Gas ausgestrahlt werden')">Lösung anzeigen</button>
-      <button onclick="showLink(3, 'https://www.youtube.com/watch?v=O6Ae0vbnQuQ')">Erklärvideo anzeigen</button>
+      <button onclick="showLink(3, 'Emissions- und Absorptionsspektren', 'https://lehrerschmidt.de/physik/emissions-und-absorptionsspektren/')">Erklärvideo anzeigen</button>
       <div class="feedback" id="solution_3"></div>
       <div class="link-container" id="link_3"></div>
     </div>
@@ -64,7 +64,7 @@
       <p>Was zeigt ein Absorptionsspektrum?</p>
       <textarea placeholder="Antwort eingeben..."></textarea><br/>
       <button onclick="showSolution(4, 'Dunkle Linien im kontinuierlichen Spektrum')">Lösung anzeigen</button>
-      <button onclick="showLink(4, 'https://www.youtube.com/watch?v=O6Ae0vbnQuQ')">Erklärvideo anzeigen</button>
+      <button onclick="showLink(4, 'Emissions- und Absorptionsspektren', 'https://lehrerschmidt.de/physik/emissions-und-absorptionsspektren/')">Erklärvideo anzeigen</button>
       <div class="feedback" id="solution_4"></div>
       <div class="link-container" id="link_4"></div>
     </div>
@@ -74,7 +74,7 @@
       <p>Was beschreibt das Bohrsche Atommodell?</p>
       <textarea placeholder="Antwort eingeben..."></textarea><br/>
       <button onclick="showSolution(5, 'Elektronen kreisen auf festen Bahnen um den Atomkern')">Lösung anzeigen</button>
-      <button onclick="showLink(5, 'https://www.youtube.com/watch?v=UcsKkUOjei4')">Erklärvideo anzeigen</button>
+      <button onclick="showLink(5, 'Bohrsches Atommodell', 'https://lehrerschmidt.de/physik/bohrsches-atommodell/')">Erklärvideo anzeigen</button>
       <div class="feedback" id="solution_5"></div>
       <div class="link-container" id="link_5"></div>
     </div>
@@ -84,7 +84,7 @@
       <p>Wann wird ein Photon ausgesendet?</p>
       <textarea placeholder="Antwort eingeben..."></textarea><br/>
       <button onclick="showSolution(6, 'Wenn ein Elektron auf ein niedrigeres Energieniveau springt')">Lösung anzeigen</button>
-      <button onclick="showLink(6, 'https://www.youtube.com/watch?v=FdwbL2WEoFA')">Erklärvideo anzeigen</button>
+      <button onclick="showLink(6, 'Absorption und Emission', 'https://lehrerschmidt.de/physik/absorption-und-emission/')">Erklärvideo anzeigen</button>
       <div class="feedback" id="solution_6"></div>
       <div class="link-container" id="link_6"></div>
     </div>
@@ -94,7 +94,7 @@
       <p>Welche Farbe hat ein Photon mit hoher Energie?</p>
       <textarea placeholder="Antwort eingeben..."></textarea><br/>
       <button onclick="showSolution(7, 'Violett')">Lösung anzeigen</button>
-      <button onclick="showLink(7, 'https://www.youtube.com/watch?v=1qO4W9zjj3E')">Erklärvideo anzeigen</button>
+      <button onclick="showLink(7, 'Das elektromagnetische Spektrum', 'https://lehrerschmidt.de/physik/das-elektromagnetische-spektrum/')">Erklärvideo anzeigen</button>
       <div class="feedback" id="solution_7"></div>
       <div class="link-container" id="link_7"></div>
     </div>
@@ -104,7 +104,7 @@
       <p>Was versteht man unter einem Linienspektrum?</p>
       <textarea placeholder="Antwort eingeben..."></textarea><br/>
       <button onclick="showSolution(8, 'Ein Spektrum aus einzelnen, farbigen Lichtlinien')">Lösung anzeigen</button>
-      <button onclick="showLink(8, 'https://www.youtube.com/watch?v=O6Ae0vbnQuQ')">Erklärvideo anzeigen</button>
+      <button onclick="showLink(8, 'Emissions- und Absorptionsspektren', 'https://lehrerschmidt.de/physik/emissions-und-absorptionsspektren/')">Erklärvideo anzeigen</button>
       <div class="feedback" id="solution_8"></div>
       <div class="link-container" id="link_8"></div>
     </div>
@@ -114,7 +114,7 @@
       <p>Wie wird ein Gas angeregt?</p>
       <textarea placeholder="Antwort eingeben..."></textarea><br/>
       <button onclick="showSolution(9, 'Durch Energiezufuhr wie Strom oder Wärme')">Lösung anzeigen</button>
-      <button onclick="showLink(9, 'https://www.youtube.com/watch?v=fX0MFa2tTEs')">Erklärvideo anzeigen</button>
+      <button onclick="showLink(9, 'Energiezufuhr und angeregte Zustände', 'https://lehrerschmidt.de/physik/energiezufuhr-und-angeregte-zustaende/')">Erklärvideo anzeigen</button>
       <div class="feedback" id="solution_9"></div>
       <div class="link-container" id="link_9"></div>
     </div>
@@ -124,7 +124,7 @@
       <p>Was zeigt die Spektralanalyse?</p>
       <textarea placeholder="Antwort eingeben..."></textarea><br/>
       <button onclick="showSolution(10, 'Die chemische Zusammensetzung anhand des Lichtspektrums')">Lösung anzeigen</button>
-      <button onclick="showLink(10, 'https://www.youtube.com/watch?v=O6Ae0vbnQuQ')">Erklärvideo anzeigen</button>
+      <button onclick="showLink(10, 'Emissions- und Absorptionsspektren', 'https://lehrerschmidt.de/physik/emissions-und-absorptionsspektren/')">Erklärvideo anzeigen</button>
       <div class="feedback" id="solution_10"></div>
       <div class="link-container" id="link_10"></div>
     </div>
